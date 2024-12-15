@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+      h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .underlined {
+        border-bottom: 3px solid currentColor;
+      }
+
+      .reproved {
+        background-color: red;
+      }
+
+      .aproved {
+        background-color: green;
+      }
+
+      .form-add {
+        background: #e3ecec;
+        padding-top: 0.75em;
+      }
+
+      .main-title {
+        margin-bottom: 0;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        class="hero center card-panel materialize-red darken-4 white-text z-depth-3"
+      >
+        <h1 class="materialize-red-text text-lighten-3">
+          Curso Javascript Completo
+        </h1>
+      </div>
+
+      <h2 class="materialize-red-text text-lighten-2 underlined main-title">
+        Dados de Alunos
+      </h2>
+
+      <form class="form-add">
+        <div class="row">
+          <div class="input-field col s8">
+            <input
+              placeholder="Digite o nome do aluno"
+              id="first_name"
+              type="text"
+              class="validate"
+            />
+            <label for="first_name" class="active">Adicionar Aluno</label>
+          </div>
+          
+          <div class="input-field col s4">
+            <button class="btn-floating" type="submit" name="action">
+              <i class="material-icons">add</i>
+            </button>
+          </div>
+          
+        </div>
+      </form>
+      <div class="form-search">
+        <div class="row">
+          <div class="input-field col s8">
+            <input
+              placeholder="Digite o nome do aluno"
+              id="search_name"
+              type="text"
+              class="validate"
+            />
+            <label for="search_name" class="active">Buscar Aluno</label>
+          </div>
+          <div class="input-field col s4">
+           
+          </div>
+        </div>
+      </div>
+
+
+      <table data-table-alunos>
+        <thead>
+        </thead>
+
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="js/calc.js"></script>
+    <script src="js/Models/aluno.model.js"></script>
+    <script src="js/Services/alunos.service.js"></script>
+    <script src="js/Services/materias.service.js"></script>
+    <script src="js/Views/aluno.view.js"></script>
+    <script src="js/Controller/aluno.controller.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+    // const table = new TableNotas()
+    // table.renderCabecalho(alunos)
+    // table.renderTable(alunos)
+
+    // const sendAluno = document.querySelector(".form-add")
+    // sendAluno.addEventListener("submit", function(e){
+    //   e.preventDefault()
+    //   const nomeAluno = document.getElementById("first_name").value;
+    //  // let novoAluno = new Aluno(nomeAluno)
+    //   const obj = {
+    //       _id: 1,
+    //       nome: nomeAluno,
+    //       notas: {
+    //         portugues: [4, 4, 4, 4],
+    //         matematica: [4, 4, 5, 5],
+    //         historia: [5, 5, 6, 6],
+    //         ciencias: [7, 7, 8, 9],
+    //       },
+    //     }
+
+    //   table.adicionarAluno(alunos, obj)
+    // })
+    
+    // //sendAluno.addEventListerner("click", table.adicionarAluno(new Aluno(nomeAluno)))
+
+    </script>
+  </body>
+</html>
