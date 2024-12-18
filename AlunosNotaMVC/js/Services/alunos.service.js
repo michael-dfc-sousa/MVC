@@ -1,4 +1,7 @@
-class AlunosService {
+import { AlunoModel } from "../Models/aluno.model.js"
+
+
+export class AlunosService {
     
     constructor() {
         this.alunos = []
@@ -18,6 +21,7 @@ class AlunosService {
     }
 
     editAluno() {
+
         this.updateLocalStorage()
     }
 

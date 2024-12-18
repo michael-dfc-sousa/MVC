@@ -1,4 +1,5 @@
-class AlunosView{
+
+export class AlunosView{
     constructor(table, materiaService){
         this.tableList = table;
         this.tableHeader = this.tableList.querySelector("thead")

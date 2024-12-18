@@ -1,4 +1,5 @@
-class EditAlunosController{
+
+export class EditAlunosController{
     constructor(alunoModel, viewEdit, service){
         this.alunoModel = alunoModel;
         this.viewEdit = viewEdit;

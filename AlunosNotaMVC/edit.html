@@ -86,32 +86,16 @@
 
   <!--JavaScript at end of body for optimized loading-->
   <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
- 
+<!--  
   <script src="js/calc.js"></script>
   <script src="js/Models/aluno.model.js"></script>
   <script src="js/Services/alunos.service.js"></script>
   <script src="js/Services/materias.service.js"></script>
   <script src="js/Controller/editAluno.controller.js"></script>
   <script src="js/Views/editAluno.view.js"></script>
-  
-  <!-- <script src="js/app.js"></script> -->
+   -->
+  <script src="js/edit.js" type="module"></script>
 
-  <script>
-
-    const alunosService = new AlunosService()
-    const parametersSearch = window.location.search;
-    const urlSearchParam = new URLSearchParams(parametersSearch)
-    const _id = parseInt(urlSearchParam.get("id"))
-    const alunoRetornadoPeloId = alunosService.getAlunoById(_id)
-    let nomeDoAluno = document.getElementById("first_name")
-    nomeDoAluno.value = alunoRetornadoPeloId.nome
-    
-    const dataEditNotas =  document.querySelector('[form-data-edit-notas]')
-    const materiasService = new MateriaService().getMaterias()
-    const editAlunoViewNotas = new EditAlunoView(dataEditNotas, materiasService)
-    const editAlunosController = new EditAlunosController(alunoRetornadoPeloId, editAlunoViewNotas, alunosService)
-
-  </script>
 </body>
 
 </html>

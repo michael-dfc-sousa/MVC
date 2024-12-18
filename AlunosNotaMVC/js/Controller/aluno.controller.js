@@ -1,4 +1,8 @@
-class AlunosController{
+import { AlunoModel } from "../Models/aluno.model.js";
+
+
+export class AlunosController{
+    
     constructor(service, view){
         view.renderTable(service.getAlunos());
         this.service = service;

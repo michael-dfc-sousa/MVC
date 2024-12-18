@@ -1,4 +1,7 @@
-class AlunoModel{
+import { avarege } from "../calc.js";
+
+
+export class AlunoModel{
     constructor({nome, _id, notas} = {notas: {}}){
 
         this.nome = nome;
